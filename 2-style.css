@@ -1,0 +1,199 @@
+/*@font-face {
+  font-family: 'Iropke Batang';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//cdn.rawgit.com/iropke/font-iropke-batang/b8f2ad27/IropkeBatangM.eot);
+  src: url(//cdn.rawgit.com/iropke/font-iropke-batang/b8f2ad27/IropkeBatangM.eot?#iefix) format('embedded-opentype'),
+       url(//cdn.rawgit.com/iropke/font-iropke-batang/b8f2ad27/IropkeBatangM.woff) format('woff'),
+       url(//cdn.rawgit.com/iropke/font-iropke-batang/b8f2ad27/IropkeBatangM.ttf) format('truetype');
+}
+*/
+.page {
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+
+.content {
+
+}
+
+
+/*Greeting*/
+
+.greeting {
+
+}
+
+.content__greeting {
+	display: flex
+}
+
+.greeting--style {
+	background: url(images/bg-1.png);
+	/*max-width: 100%; */
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+    min-height: 95vh;
+    position: relative;
+}
+
+/*Contact us*/
+
+.contact-us {
+
+}
+
+.greeting__contact-us {
+	position: absolute;
+	top: 5%;
+    left: 78%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.contact-us__number {
+	display: inline-block;
+	margin-right: 20px; 
+}
+
+.contact-us__number--style {
+	color: #a07c43;
+	text-decoration: none;
+}
+
+.contact-us__button {
+	display: inline-block;
+}
+
+.contact-us__button--style {
+	background-image: linear-gradient(to right top, #a07c43 , #cbb067);
+	padding: 8px 35px;
+	border-radius: 20px;
+	text-decoration: none;
+	color: #201600;
+	font-family: arial;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.greeting__greeting-wrapper {
+	display: block;
+	width: 88%;
+	height: 78%;
+	margin: 0;
+    background: linear-gradient(rgba(0 , 0 , 0, 0.5), rgba(0, 0, 0, 0.5));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+
+.greeting-wrapper--style {
+	border: 2px solid #8e7a4e;
+}
+
+.greeting-content__title {
+	text-align: center;	
+	position: relative;
+}
+
+.greeting-content__title--style {
+	padding: 20px;
+	font-size: 46px;
+	color: #ebae44;
+	font-family: 'Iropke Batang';
+	font-weight: lighter;
+}
+
+.greeting-content__title:after {
+	content: "";
+    position: absolute;
+    width: 30%;
+    height: 1px;
+    bottom: 0;
+    left: 35%;
+    border-bottom: 1px solid #cf9d44;
+}
+
+.greeting-content__title--style {
+	
+}
+
+.greeting-content__contact-form {
+	text-align: center;
+	padding-top: 40px;
+}
+
+.contact-form__input-wrapper {
+	padding: 8px 0;
+}
+
+.contact-form__input {
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.contact-form__input--style {
+	font-family: arial;
+	font-size: 13px;
+	border-radius: 5px;
+}
+
+.contact-form__submit-wrapper {
+	padding-top: 12px;
+}
+
+.contact-form__submit--style {
+	font-size: 13px;
+	font-weight: 600;
+	background-color: #e8a445;
+	border-radius: 20px;
+	padding: 5px 25px;
+	border: none;
+	outline: none;
+}
+
+
+/*Modal Window elements*/
+
+#blockscreen, #window {
+    position: fixed;
+}
+#blockscreen {
+	display: none;
+    background: rgba(0, 0, 0, .5);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+}
+#window {
+	display: none;
+    z-index: 11;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #a1a1a1;
+    box-shadow: 0 0 10px #444;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+	height: 120px;
+}
+
+.top-nav {
+	position: fixed;
+	z-index: 1000;
+	/*top: 120px;*/
+}

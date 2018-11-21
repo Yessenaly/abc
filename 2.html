@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2</title>
+	<link rel="stylesheet" type="text/css" href="2-style.css">
+</head>
+<body class = "page">
+	<div id = "wrapper">
+		<header class = "header" style = "color: red; font-size: 20px;">
+			<div id = "cell">1</div>
+			<button id = "add-button">+</button>
+			<nav class = "top-nav">
+				<li>wefpm</li>
+				<li>wefo,ls</li>
+				<li>wefpo,</li>
+			</nav>
+		</header>
+		<main class = "content">
+			<div class = "greeting content__greeting greeting--style">
+				<div class = "contact-us greeting__contact-us contact-us--style">
+					<div class = "contact-us__number">
+						<a href="tel:+77077077011" class = "contact-us__number--style">
+							+77077077011
+						</a>
+					</div>
+					<div class = "contact-us__button">
+						<a href="tel:+77077077011" class = "contact-us__button--style">
+							Связаться
+						</a>
+					</div>
+				</div>
+				<div class = "greeting-wrapper greeting__greeting-wrapper greeting-wrapper--style">
+					<div class = "greeting-content">
+						<div class = "logo greeting-content__logo logo--style">
+							<img src="" alt="">
+						</div>
+						<h1 class = "greeting-content__title greeting-content__title--style">
+							Курсы английского языка
+						</h1>
+						<form name = "contact-form" action="phpmailer/mail-form.php" method = "POST" class = "contact-form greeting-content__contact-form contact-form--style">
+							<div class = "contact-form__input-wrapper">
+								<input type="text" placeholder = "Имя" class = "contact-form__input contact-form__input--style" name = "name">
+							</div>
+							<div class = "contact-form__input-wrapper">
+								<input type="text" placeholder = "Номер телефона" class = "contact-form__input contact-form__input--style" name = "phone">
+							</div>
+							<div class = "contact-form__input-wrapper">
+								<input type="text" placeholder = "Почта" class = "contact-form__input contact-form__input--style" name = "email">
+							</div>
+							<div class = "contact-form__submit-wrapper">
+								<button id = "send-button" type="submit" class = "contact-form__submit contact-form__submit--style">Связаться</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div style = "height:1000px;" id = "instafeed">
+				<ul>
+					
+				</ul>
+
+			</div>
+			<form action="" id = "login-form">
+				<input type="text" name = "username" placeholder = "username" id = "username">
+				<input type="text" name = "password" placeholder = "password" id = "password">
+				<button id = "login-button">Login</button>
+			</form>
+			<div id = "success" style = "display:none;">
+				You are authorized!
+			</div>
+		</main>	
+		<div id = "blockscreen"></div>
+		<div id = "window">
+			<div>
+				<h3>Вы ввели неправильный формат почты или телефона</h3>
+				<button id = "exit-button">
+					Exit
+				</button>
+			</div>
+		</div>
+	</div>
+	<script src = "jquery.js"></script>
+	// <script>
+	//    var h_hght = 120; // высота шапки
+	//    var h_mrg = 0;     // отступ когда шапка уже не видна
+	//    $(function(){
+	//     $(window).scroll(function(){
+	//        var top = $(this).scrollTop();
+	//        var elem = $('.top-nav');
+	//        if (top+h_mrg < h_hght) {
+	//         elem.css('top', (h_hght-top));
+	//        } else {
+	//         elem.css('top', h_mrg);
+	//        }
+	//      });
+	//    });
+	//  </script>
+	<script src = "jquery-ui/jquery-ui.min.js"></script>
+	<script src = "instafeed/instafeed.min.js"></script>
+	<script src = "imagesloaded/imagesloaded.pkgd.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="demo/js/jquery.tubular.1.0.js"></script>
+	<script src = "script.js"></script>
+</body>
+</html>
